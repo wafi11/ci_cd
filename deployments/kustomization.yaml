@@ -8,4 +8,7 @@ resources:
 configMapGenerator:
   - name: html-content
     files:
-      - ../index.html
+      - ./../index.html
+
+generatorOptions:
+  disableNameSuffixHash: true
