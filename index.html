@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello K8s + ArgoCD</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+      }
+      .container {
+        text-align: center;
+      }
+      h1 {
+        font-size: 3em;
+        margin-bottom: 0.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Learn Kubernetes</h1>
+      <p>Deployed with ArgoCD</p>
+      <p>Hostname: <span id="hostname"></span></p>
+    </div>
+    <script>
+      document.getElementById("hostname").textContent =
+        window.location.hostname;
+    </script>
+  </body>
+</html>
